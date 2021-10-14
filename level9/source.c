@@ -12,7 +12,7 @@ int main(int ac, char **av)
 	char s1[15];
 	int ret;
 
-	s2 = s1;
+	s2 = &s1;
 	setannotation(s1, av[1]);
 
 	ret = **s2;
